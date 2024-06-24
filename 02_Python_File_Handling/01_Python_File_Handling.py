@@ -45,24 +45,24 @@ else:
     print('-' * 50)
     print(file.read())  # to read the file
 
-print('-' * 50)
+print('~' * 50)
 
 """ The code above is the same as: """
 
 file = open("demo2.txt", "rt")
 print(file.read())  # to read the file
 
-print('-' * 50)
+print('~' * 50)
 
 # file is an object,
 
 # this command output all methods and properties about this file object
 print(dir(file))
 
-print('-' * 50)
+print('*' * 50)
 
 # this command output detailed information about methods and properties about this file object
-print("help(file) = ", help(file))
+print(help(file))
 
 """ Because "r" for read, and "t" for text are the default values, 
 you do not need to specify them.
