@@ -52,11 +52,12 @@ def integer_comparison1():
         print(a, " < ", b)
 
 
-# short hand if
+# shorthand if
 
 a = 200
 b = 33
-if a > b: print("a is greater than b")
+if a > b:
+    print("a is greater than b")
 
 # Short Hand If ... Else
 a = 2
@@ -93,13 +94,12 @@ if x > 10:
     else:
         print("but not above 20.")
 
-
 # The pass Statement
 a = 33
 b = 200
 
 if b > a:
-  pass
+    pass
 
 # integer_comparison2()
 
