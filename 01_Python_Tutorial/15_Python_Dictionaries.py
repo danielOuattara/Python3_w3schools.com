@@ -422,12 +422,7 @@ print(70 * '-')
 
 # Add items
 
-this_dict = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964
-}
-this_dict["color"] = "red"
+this_dict = {"brand": "Ford", "model": "Mustang", "year": 1964, "color": "red"}
 print(this_dict)
 print(70 * '-')
 
