@@ -18,7 +18,7 @@ lambda arguments : expression
 
 The expression is executed and the result is returned:
 
-Example: Add 10 to argument a, and return the result: """
+Example: Add 10 to argument 'a' and return the result: """
 
 x = lambda a: a + 10
 print(x(5))
@@ -55,18 +55,18 @@ def my_func(n):
 Use that function definition to make a function that always doubles 
 the number you send in: """
 
-
 my_doubler = my_func(2)
 
 print(my_doubler(11))
+
 """
 Or, use the same function definition to make a function that always 
 triples the number you send in: """
 
-
 my_tripler = my_func(3)
 
 print(my_tripler(11))
+
 """
 Or, use the same function definition to make both functions, in the same program: """
 
