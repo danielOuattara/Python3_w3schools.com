@@ -48,7 +48,6 @@ x = str(3)  # --> x = "3"
 y = int(3)  # --> y = 3
 z = float(3)  # --> z = 3.0
 
-
 """
 Get the Type
 -------------
@@ -183,7 +182,6 @@ y = "John"
 # solution =
 print(x, y)
 
-
 """
 Global Variables
 ------------------
@@ -238,6 +236,7 @@ is local, and can only be used inside that function.
 To create a global variable inside a function, you can use the 'global' 
 keyword. Now that variable belongs to the global scope:
 """
+
 
 def myfunc():
     global name
