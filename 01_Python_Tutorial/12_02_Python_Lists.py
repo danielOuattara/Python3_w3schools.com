@@ -54,20 +54,23 @@ print(70 * '-', '0')
 
 """ Lists """
 
+# list literal definition
+# ========================
+
 first_list = ["apple", "banana", "cherry"]
 print('first_list =', first_list)
 print(70 * '-', '1')
 
 #  Allow duplicate
 #  ================
-thislist = ["apple", "banana", "cherry", "apple", "cherry"]
-print(thislist)
+this_list = ["apple", "banana", "cherry", "apple", "cherry"]
+print(this_list)
 print(70 * '-', '2')
 
 #  list length
 #  ================
-thislist = ["apple", "banana", "cherry", "apple", "cherry"]
-print("len(thislist) = ", len(thislist))
+this_list = ["apple", "banana", "cherry", "apple", "cherry"]
+print("len(this_list) = ", len(this_list))
 print(70 * '-', '3')
 
 #  List Items - Data Types
@@ -86,13 +89,13 @@ print('list_mixed = ', list_mixed)
 
 #  type()
 #  ========
-print(type(thislist))
+print(type(this_list)) # <class 'list'>
 
 #  The list() Constructor
 #  =======================
 
-thislist = list(("apple", "banana", "cherry"))  # note the double round-brackets
-print('thislist = ', thislist)
+this_list = list(("apple", "banana", "cherry"))  # note the double round-brackets
+print('this_list = ', this_list)
 
 print(70 * '-', '4')
 #  Access Items
@@ -141,8 +144,8 @@ print(70 * '-', '9')
 #  Check if Item Exists
 # ======================
 
-thislist = ["apple", "banana", "cherry"]
-if "apple" in thislist:
+this_list = ["apple", "banana", "cherry"]
+if "apple" in this_list:
     print("Yes, 'apple' is in the fruits list")
 
 
@@ -161,67 +164,68 @@ print(70 * '-', '10')
 #  Change Item Value
 #  =================
 
-thislist = ["apple", "banana", "cherry"]
-thislist[1] = "blackcurrant"
-print(thislist)
+this_list = ["apple", "banana", "cherry"]
+this_list[1] = "blackcurrant"
+print(this_list)
 
 #  Change a Range of Item Values
 #  ==============================
 
-thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
-print('thislist === ', thislist)
+this_list = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+print('this_list === ', this_list)
 
-thislist[1:3] = ["blackcurrant", "watermelon"]
-print('thislist === ', thislist)
+this_list[1:3] = ["blackcurrant", "watermelon"]
+print('this_list === ', this_list)
 
-thislist = ["apple", "banana", "cherry"]
-thislist[1:2] = ["blackcurrant", "watermelon"]
-print(thislist)
+this_list = ["apple", "banana", "cherry"]
+this_list[1:2] = ["blackcurrant", "watermelon"]
+print(this_list)
 
-thislist = ["apple", "banana", "cherry"]
-thislist[1:3] = ["watermelon"]
-print(thislist)
+this_list = ["apple", "banana", "cherry"]
+this_list[1:3] = ["watermelon"]
+print(this_list)
 
 #  Insert Items
 #  =============
 
-thislist = ["apple", "banana", "cherry"]
-thislist.insert(2, "watermelon")
-print(thislist)
+this_list = ["apple", "banana", "cherry"]
+print(this_list)
+this_list.insert(2, "watermelon")
+print(this_list)
 
 # Add Items.
 # ===========
 
 # Append Items
-thislist = ["apple", "banana", "cherry"]
-thislist.append("orange")
-print(thislist)
+this_list = ["apple", "banana", "cherry"]
+this_list.append("orange")
+print(this_list)
 print(70 * '-', '11')
 
 #  Insert Items
-thislist = ["apple", "banana", "cherry"]
-thislist.insert(1, "orange")
-print(thislist)
+this_list = ["apple", "banana", "cherry"]
+this_list.insert(1, "orange")
+print(this_list)
 print(70 * '-', '12')
 
 #  Extend List
-thislist = ["apple", "banana", "cherry"]
+this_list = ["apple", "banana", "cherry"]
 tropical = ["mango", "pineapple", "papaya"]
-thislist.extend(tropical)
-print(thislist)
+this_list.extend(tropical)
+print(this_list)
 print(70 * '-', '13')
 
 #  Add Any Iterable
-thislist = ["apple", "banana", "cherry"]
-thistuple = ("kiwi", "orange")
-thislist.extend(thistuple)
-print(thislist)
+this_list = ["apple", "banana", "cherry"]
+this_tuple = ("kiwi", "orange")
+this_list.extend(this_tuple)
+print(this_list)
 print(70 * '-', '14')
 
 #  Remove Item
-print("first_list", first_list)
+print("first_list = ", first_list)
 first_list.remove("banana")  # remove()
-print("first_list", first_list)
+print("first_list = ", first_list)
 
 print("second_list", second_list)
 second_list.pop()  # pop()
@@ -242,9 +246,9 @@ print("first_list =", first_list)
 print(70 * '-', '15')
 
 #  Clear the List
-thislist = ["apple", "banana", "cherry"]
-thislist.clear()
-print("thislist = ", thislist)
+this_list = ["apple", "banana", "cherry"]
+this_list.clear()
+print("this_list = ", this_list)
 
 #  List Length
 print("first_list length =", len(first_list))  # 0
@@ -253,25 +257,25 @@ print("third_list length =", len(third_list))  # 7
 print(70 * '-', '16')
 
 #  Loop Through a List
-thislist = ["apple", "banana", "cherry"]
-for x in thislist:
+this_list = ["apple", "banana", "cherry"]
+for x in this_list:
     print(x)
 print(70 * '-', '17')
 
 #  Loop Through the Index Numbers
-thislist = ["apple", "banana", "cherry"]
-for i in range(len(thislist)):
-    print(thislist[i])
+this_list = ["apple", "banana", "cherry"]
+for i in range(len(this_list)):
+    print(this_list[i])
 
 print(70 * '-', '18')
 
 #  Using a While Loop
 #  ===================
 
-thislist = ["apple", "banana", "cherry"]
+this_list = ["apple", "banana", "cherry"]
 i = 0
-while i < len(thislist):
-    print(thislist[i])
+while i < len(this_list):
+    print(this_list[i])
     i += 1
 
 print(70 * '-', '19')
@@ -279,8 +283,8 @@ print(70 * '-', '19')
 #  Looping Using List Comprehension
 #  =================================
 
-thislist = ["apple", "banana", "cherry"]
-[print(x) for x in thislist]
+this_list = ["apple", "banana", "cherry"]
+[print(x) for x in this_list]
 
 print(70 * '-', '20')
 
@@ -290,21 +294,22 @@ print(70 * '-', '20')
 # using 'basic' setting
 
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist = []
+new_list = []
 
 for x in fruits:
     if "a" in x:
-        newlist.append(x)
+        new_list.append(x)
 
-print("newlist = ", newlist)
+print("new_list = ", new_list)
 
 print(70 * '-', '21')
 
 #  Using comprehension list
 
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist2 = [x for x in fruits if "a" in x]
-print("newlist2 = ", newlist2)
+
+new_list2 = [x for x in fruits if "a" in x]
+print("new_list2 = ", new_list2)
 
 newListCapitalize = [x.capitalize() for x in fruits]  # OK
 print('newListCapitalize = ', newListCapitalize)
@@ -312,40 +317,40 @@ print('newListCapitalize = ', newListCapitalize)
 print(70 * '-', '22')
 
 #  The Syntax
-#  newlist = ["expression" for item in iterable if "condition" == True]
+#  new_list = ["expression" for item in iterable if "condition" == True]
 
 
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist3 = [x for x in fruits if x != "apple"]
-print("newlist3 =", newlist3)
+new_list3 = [x for x in fruits if x != "apple"]
+print("new_list3 =", new_list3)
 print(70 * '-', '23')
 
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist4 = [x for x in fruits]
-print("newlist4 =", newlist4)
+new_list4 = [x for x in fruits]
+print("new_list4 =", new_list4)
 print(70 * '-', '24')
 
-newlist = [x for x in range(10)]
-print(newlist)
+new_list = [x for x in range(10)]
+print(new_list)
 
-newlist = [x for x in range(10) if x < 5]
-print(newlist)
-
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist = [x.upper() for x in fruits]
-print(newlist)
+new_list = [x for x in range(10) if x < 5]
+print(new_list)
 
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist = ['hello' for x in fruits]
-print(newlist)
+new_list = [x.upper() for x in fruits]
+print(new_list)
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+new_list = ['hello' for x in fruits]
+print(new_list)
 
 fruits = ["apple", "banana", "cherry", "kiwi", "mango", "orange"]
-newlist = [x for x in fruits if x != "banana"]
-print(newlist)
+new_list = [x for x in fruits if x != "banana"]
+print(new_list)
 
 fruits = ["apple", "banana", "cherry", "kiwi", "mango", "orange"]
-newlist = [x if x != "banana" else "orange" for x in fruits]
-print(newlist)
+new_list = [x if x != "banana" else "orange" for x in fruits]
+print(new_list)
 print(70 * '-', '24-Bis')
 
 # sort().

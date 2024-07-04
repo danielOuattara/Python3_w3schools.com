@@ -180,8 +180,8 @@ print(70 * "-")
 # =============
 print("first_list", first_list)
 
-first_list.remove("banana")  # remove()
-print("first_list", first_list)
+# first_list.remove("banana")  # remove()
+# print("first_list", first_list)
 
 print("second_list", second_list)
 second_list.pop()  # pop()
