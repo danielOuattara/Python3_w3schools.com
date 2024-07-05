@@ -4,11 +4,10 @@
 # 01-Python Tutorial-Python3.x
 # w3schools.com/python/
 
-"""
-Python Classes/Objects
+""" Python Classes/Objects
 =========================
 
-Python is an object oriented programming language.
+Python is an object-oriented programming language.
 Almost everything in Python is an object, with its
 properties and methods.
 
@@ -18,9 +17,12 @@ for creating objects.
 
 Create a Class
 ===================
-To create a class, use the keyword class:
-Example: Create a class named 'MyClass', with a property
-named x: """
+
+To create a class, use the keyword 'class':
+
+Example: Create a class named 'MyClass', with a
+property named x and msg: """
+
 print(70 * '-', "1")
 
 
@@ -31,9 +33,12 @@ class MyClass:
 
 """ Create Object
 =================
-Now we can use the class named 'MyClass' to create objects:
 
-Example: Create an object named 'object_1', and print the value of x: """
+Now we can use the class named 'MyClass' to create 
+objects:
+
+Example: Create an object named 'object_1', and 
+print the value of x: """
 
 object_1 = MyClass()
 print(object_1.x)
@@ -43,6 +48,7 @@ print(70 * '-', "2")
 
 """ The __init__() Function
 ============================
+
 The examples above are classes and objects in their simplest 
 form, and are not really useful in real life applications.
 
@@ -77,15 +83,14 @@ print(70 * '-', "3")
 Note: The __init__() function is called automatically 
 every time the class is being used to create a new object.
 
-
 The __str__() Function
 =======================
+
 The __str__() function controls what should be returned 
 when the class object is represented as a string.
 
-If the __str__() function is not set, the string representation 
+If the __str__() function is not set, the memory address 
 of the object is returned:
-
 
 Example: The string representation of an object WITHOUT 
 the __str__() function """
@@ -113,7 +118,7 @@ class Person:
         self.age = age
 
     def __str__(self):
-        return f"{self.name}({self.age})"
+        return f'{self.name}, {self.age}'
 
 
 p1 = Person("John", 36)
@@ -123,8 +128,10 @@ print(70 * '-', "3-TER")
 
 """ Object Methods
 ===================
+
 Objects can also contain methods. Methods in objects are 
 functions that belong to the object.
+
 Let us create a method in the Person class:
 
 Example: Insert a function that prints a greeting, and execute 
@@ -147,6 +154,7 @@ print(70 * '-', "4")
 
 """ The self Parameter
 =======================
+
 The 'self' parameter is a reference to the current instance 
 of the class, and is used to access variables that belongs 
 to the class.
@@ -174,9 +182,11 @@ print(70 * '-', "5")
 
 """ Modify Object Properties
 ===============================
+
 You can modify properties on objects like this:
 
-Example: Set the age of 'john' to 40:"""
+Example: Set the age of 'john' to 40:
+"""
 
 
 class Person:
@@ -197,9 +207,11 @@ print(70 * '-', "6")
 
 """ Delete Object Properties
 ==============================
+
 You can delete properties on objects by using the 'del' keyword:
 
-Example: Delete the 'age' property from 'john' object: """
+Example: Delete the 'age' property from 'john' object: 
+"""
 
 
 class Person:
@@ -215,7 +227,8 @@ john = Person("John", 36)
 john.age = 40
 john.greetings()
 
-del john.age
+del john.age  # deleting 'age' property
+
 try:
     john.greetings()
 except:
@@ -223,11 +236,14 @@ except:
 
 print(70 * '-', "7")
 
+
 """ Delete Objects
 =====================
+
 You can delete objects by using the 'del' keyword:
 
-Example: Delete 'john' object:"""
+Example: Delete 'john' object:
+"""
 
 
 class Person:
@@ -239,7 +255,8 @@ class Person:
 john = Person("John", 36)
 print('John Doe is', john, 'y.o')
 
-del john
+del john  # deleting John instance
+
 try:
     print('John Doe is', john, 'y.o')
 except:
@@ -247,13 +264,16 @@ except:
 
 print(70 * '-', "8")
 
+
 """ The pass Statement
 ========================
-class definitions cannot be empty, but if you for some reason 
-have a class definition with no content, put in the pass 
+
+Class definitions cannot be empty, but if you for some reason 
+have a class definition with no content, put in the 'pass' 
 statement to avoid getting an error.
 
-Example: """
+Example: 
+"""
 
 
 class Person:
